@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
      {
       //alert("important");
             var link = "mailto:aparnaaravindakshan7@gmail.com"
-          + "&subject=" + escape($('#subject').val());
+          + "?subject=" + escape($('#subject').val());
           + "&body=" + escape();
 
         window.location.href = link;
