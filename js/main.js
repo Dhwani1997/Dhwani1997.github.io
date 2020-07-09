@@ -232,7 +232,13 @@ var counterWayPoint = function() {
 	  	});
 
 	};
+    var sendMail = function() {
+		var link = "mailto:aparnaaravindakshan7@gmail.com"
+		+ "&subject=" + escape("This is my subject")
+		+ "&body=" + escape(document.getElementById('Body').value);
 
+	window.location.href = link;
+     }
 	var stickyFunction = function() {
 
 		var h = $('.image-content').outerHeight();
