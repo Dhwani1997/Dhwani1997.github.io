@@ -93,10 +93,10 @@ jQuery(document).ready(function($) {
     var action = $(this).attr('action');
     if( ! action )
      {
-      //alert("important");
+      alert( encodeURI($('#textarea1').val()));
             var link = "mailto:aparnaaravindakshan7@gmail.com"
-          + "?subject=" + escape($('#subject').val() + "from" + $('#name').val());
-          + "?body=" + escape($('#textarea1').val());
+          + "?subject=" + encodeURI($('#subject').val() + "from" + $('#name').val());
+          + "&body=" + encodeURI($('#textarea1').val());
 
         window.location.href = link;
     }
