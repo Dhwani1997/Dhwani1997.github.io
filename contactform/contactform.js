@@ -91,9 +91,14 @@ jQuery(document).ready(function($) {
     if (ferror) return false;
     else var str = $(this).serialize();
     var action = $(this).attr('action');
-    if( ! action ) {
-      alert(important);
-      action = 'contactform/contactform.php';
+    if( ! action )
+     {
+      //alert("important");
+            var link = "mailto:aparnaaravindakshan7@gmail.com"
+          + "&subject=" + escape($('#subject').val());
+          + "&body=" + escape();
+
+        window.location.href = link;
     }
     $.ajax({
       type: "POST",
