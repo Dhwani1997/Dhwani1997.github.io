@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
      // alert( encodeURI($('#textarea1').val()));
             var link = "mailto:aparnaaravindakshan7@gmail.com"
           + "?subject=" + encodeURI($('#subject').val() + " from " + $('#name').val()
-          + "&body= Hi Aparna \n" +  $('#textarea1').val() + " \n from \n " + $('#name').val());
+          + "&body= Hi Aparna \n" +  $('#textarea1').val() + " \n from\n" + $('#name').val());
  
         window.location.href = link;
     }
